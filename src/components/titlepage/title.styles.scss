@@ -1,0 +1,18 @@
+.holiday-font {
+    font-family: 'Mountains of Christmas';
+}
+
+.overlay {
+    position: absolute;
+    height: 55%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    letter-spacing: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    font-size: 30px;
+}
