@@ -3,7 +3,7 @@
 }
 
 .title {
-    margin-top: 70px;
+    margin-top: 50px;
     text-align: center;
     letter-spacing: 5px;
     display: flex;
@@ -13,4 +13,20 @@
     color: white;
     font-size: 60px;
     text-shadow: 5px 5px 2px black;
+}
+
+.blink {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    text-shadow: 5px 5px 2px black;
+    animation: blinker 1.5s linear infinite;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
 }
