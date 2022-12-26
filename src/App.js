@@ -6,11 +6,11 @@ import Countdown from './components/countdown/countdown';
 
 function App() {
     return (
-        <div>
+        <>
             <Title />
             <Login />
             <Countdown />
-        </div>
+        </>
     );
 }
 

@@ -18,7 +18,7 @@ const Countdown = () => {
 	return (
 		<>
 			<section className='container holiday-font'>
-				<h1>Baking Countdown Timer</h1>
+				<h1>Countdown to Baking Event:</h1>
 				<div className='countdown'>
 					<article>
 						<p>{days}</p>
