@@ -1,5 +1,6 @@
 import './countdown.styles.scss';
 import {useState, useEffect} from 'react';
+import Login from '../login/login';
 
 const Countdown = () => {
 	const [days, setDays] = useState(10);
@@ -45,27 +46,30 @@ const Countdown = () => {
 					<div className='spinner'></div>
 				</div>
 			) : (
-				<section className='container holiday-font'>
-					<h1>Baking Event Countdown:</h1>
-					<div className='countdown'>
-						<article>
-							<p>{days}</p>
-							<h3>Days:</h3>
-						</article>
-						<article>
-							<p>{hours}</p>
-							<h3>Hours:</h3>
-						</article>
-						<article>
-							<p>{minutes}</p>
-							<h3>Minutes:</h3>
-						</article>
-						<article>
-							<p>{seconds}</p>
-							<h3>Seconds:</h3>
-						</article>
-					</div>
-				</section>
+				<div>
+					<section className='container holiday-font'>
+						<h1>Baking Event Countdown:</h1>
+						<div className='countdown'>
+							<article>
+								<p>{days}</p>
+								<h3>Days:</h3>
+							</article>
+							<article>
+								<p>{hours}</p>
+								<h3>Hours:</h3>
+							</article>
+							<article>
+								<p>{minutes}</p>
+								<h3>Minutes:</h3>
+							</article>
+							<article>
+								<p>{seconds}</p>
+								<h3>Seconds:</h3>
+							</article>
+						</div>
+					</section>
+					<Login />
+				</div>
 			)}
 		</>
 	);
