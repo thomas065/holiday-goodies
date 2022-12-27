@@ -1,6 +1,7 @@
 import './countdown.styles.scss';
 import {useState, useEffect} from 'react';
-import Login from '../login/login';
+import LoginButton from "../login/loginbutton";
+import LoginForm from "../login/loginform";
 
 const Countdown = () => {
 	const [days, setDays] = useState(10);
@@ -8,6 +9,12 @@ const Countdown = () => {
 	const [minutes, setMinutes] = useState(10);
 	const [seconds, setSeconds] = useState(10);
 	const [isLoading, setIsLoading] = useState(true)
+
+	const [isShowLogin, setIsShowLogin] = useState(false);
+
+	const handleLoginClick = () => {
+		setIsShowLogin((isShowLogin) => !isShowLogin);
+	}
 
 	useEffect(() => {
 		const countdown = () => {
@@ -43,7 +50,12 @@ const Countdown = () => {
 		<>
 			{isLoading ? (
 				<div className='loading'>
-					<div className='spinner'></div>
+					<div>
+						<h1>Loading...</h1>
+					</div>
+					<div className='spinner1'></div>
+					<div className='spinner2'></div>
+					<div className='spinner3'></div>
 				</div>
 			) : (
 				<div>
@@ -68,7 +80,8 @@ const Countdown = () => {
 							</article>
 						</div>
 					</section>
-					<Login />
+					<LoginButton handleLoginClick={handleLoginClick}/>
+					<LoginForm isShowLogin={isShowLogin}/>
 				</div>
 			)}
 		</>

@@ -9,13 +9,40 @@
 }
 
 .loading {
+  display: flex;
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
 }
 
-.spinner {
+.loading h1 {
+
+  font-size: 3rem;
+  font-weight: 400;
+  color: #fff;
+  text-align: center;
+}
+
+.spinner1 {
+  background-color: transparent;
+  border: 5px solid lawngreen;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border-top-color: red;
+  animation: spin 0.75s linear infinite;
+}
+.spinner2 {
+  background-color: transparent;
+  border: 5px solid red;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border-top-color: lawngreen;
+  animation: spin 0.75s linear infinite;
+}
+.spinner3 {
   background-color: transparent;
   border: 5px solid lawngreen;
   height: 50px;

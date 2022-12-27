@@ -7,6 +7,7 @@ function App() {
         <div>
             <Title />
             <Countdown />
+
         </div>
     );
 }
