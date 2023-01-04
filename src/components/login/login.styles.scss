@@ -7,11 +7,11 @@ button {
   flex-direction: column;
   margin-left: auto;
   margin-right: auto;
-  margin-top: -160px;
+  margin-top: -150px;
 }
 
 button:hover {
-  box-shadow: 0px 0px;
+  box-shadow: 0 0;
 }
 
 .push-me {
@@ -46,7 +46,7 @@ button:hover {
 }
 
 .push-me:active .front {
-  box-shadow: green 0px 0px 100px 40px;
+  box-shadow: green 0 0 100px 40px;
   transform: translateY(-2px);
   transition: transform 34ms;
 }
@@ -55,7 +55,7 @@ button:hover {
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: start;
+  align-items: flex-start;
 }
 
 .form-box{
@@ -93,7 +93,6 @@ label {
   justify-content: center;
   align-items: center;
   border-radius: 20px;
-  padding: 2px;
   padding-left: 10px;
   letter-spacing: 1px;
   font-weight: 600;
