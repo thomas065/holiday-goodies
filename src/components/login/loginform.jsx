@@ -1,7 +1,7 @@
 import './login.styles.scss';
 
-
 const LoginForm = ({isShowLogin}) => {
+
 	return (
 		<div className={`${!isShowLogin ? "active" : ""} show`}>
 			<div className="login-form">
