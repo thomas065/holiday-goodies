@@ -1,4 +1,4 @@
-import './login.styles.scss'
+import './login-button.styles.scss'
 
 const LoginButton = ({handleLoginClick}) => {
 	const handleClick = () => {
@@ -6,11 +6,11 @@ const LoginButton = ({handleLoginClick}) => {
 	}
 
 	return (
-		<>
+		<div className='button'>
 			<button onClick={handleClick} className='push-me button'>
-				<span className='front'>Order</span>
+				<a href='/login' className='front'>Order</a>
 			</button>
-		</>
+		</div>
 	);
 }
 

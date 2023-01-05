@@ -1,14 +1,16 @@
 import './styles.scss';
 import Title from './components/titlepage/title';
-import Countdown from './components/countdown/countdown';
+import {BrowserRouter, Routes, Route} from 'react-router-dom';
+import LoginForm from "./components/login/loginform";
 
 function App() {
     return (
-        <div>
-            <Title />
-            <Countdown />
-
-        </div>
+        <BrowserRouter>
+            <Routes>
+                <Route path="/" element={<Title />} />
+                <Route path="/login" element={<LoginForm />} />
+            </Routes>
+        </BrowserRouter>
     );
 }
 export default App;

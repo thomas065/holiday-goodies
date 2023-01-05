@@ -1,33 +1,38 @@
-import './login.styles.scss';
+import './loginform.styles.scss';
 
+const LoginForm = () => {
 
-const LoginForm = ({isShowLogin}) => {
 	return (
-		<div className={`${!isShowLogin ? "active" : ""} show`}>
-			<div className="login-form">
-				<div className="form-box solid">
-					<form>
-						<h1 className='login-text'>Sign In</h1>
-						<label>Username</label>
-						<br></br>
+		<div className="Auth-form-container">
+			<form className="Auth-form">
+				<div className="Auth-form-content">
+					<h3 className="Auth-form-title">Sign In</h3>
+					<div className="form-group mt-3">
+						<label>Email address</label>
 						<input
-							type="text"
-							name="username"
-							className="login-box"
+							type="email"
+							className="form-control mt-1"
+							placeholder="Enter email"
 						/>
-						<br></br>
+					</div>
+					<div className="form-group mt-3">
 						<label>Password</label>
-						<br></br>
 						<input
 							type="password"
-							name="password"
-							className='login-box'
+							className="form-control mt-1"
+							placeholder="Enter password"
 						/>
-						<br></br>
-						<input type='submit' value='Login' className='login-btn' />
-					</form>
+					</div>
+					<div className="d-grid gap-2 mt-3">
+						<button type="submit" className="btn btn-primary">
+							Submit
+						</button>
+					</div>
+					<p className="forgot-password text-right mt-2">
+						 <a href="#/">Forgot password?</a>
+					</p>
 				</div>
-			</div>
+			</form>
 		</div>
 	);
 }
