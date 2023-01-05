@@ -1,5 +1,6 @@
 import './countdown.styles.scss';
 import {useState, useEffect} from 'react';
+import LoginButton from "../login/loginbutton";
 
 const Countdown = () => {
 	const [days, setDays] = useState(10);
@@ -72,6 +73,7 @@ const Countdown = () => {
 							</article>
 						</div>
 					</section>
+					<LoginButton />
 				</div>
 			)}
 		</>
