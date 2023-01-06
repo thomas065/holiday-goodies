@@ -42,7 +42,7 @@ const LoginForm = (props) => {
 							</button>
 						</div>
 						<p className="text-center mt-2">
-							<a href="/">Forgot Password?</a>
+							<a href="#/">Forgot Password?</a>
 						</p>
 					</div>
 				</form>
@@ -91,7 +91,7 @@ const LoginForm = (props) => {
 						</button>
 					</div>
 					<p className="text-center mt-2">
-						<a href="/">Forgot Password?</a>
+						<a href="#!">Forgot Password?</a>
 					</p>
 				</div>
 			</form>
