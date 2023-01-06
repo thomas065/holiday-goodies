@@ -1,4 +1,5 @@
 import './login-button.styles.scss'
+import {Link} from "react-router-dom";
 
 const LoginButton = ({handleLoginClick}) => {
 	const handleClick = () => {
@@ -8,7 +9,7 @@ const LoginButton = ({handleLoginClick}) => {
 	return (
 		<div className='button'>
 			<button onClick={handleClick} className='push-me button'>
-				<a href='/login' className='front'>Order</a>
+				<Link to={'/login'} ><a href='#!' className='front'>Order</a></Link>
 			</button>
 		</div>
 	);
