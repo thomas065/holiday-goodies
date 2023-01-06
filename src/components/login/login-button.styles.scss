@@ -1,14 +1,12 @@
 .button {
   text-decoration: none;
   text-decoration-color: white;
-  box-shadow: black 2px 2px;
   text-shadow: black 2px 2px;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: -150px;
+  margin: auto;
+  margin-top: 30px;
   font-weight: bold;
 }
 
@@ -23,6 +21,7 @@ button:hover {
   padding: 0;
   cursor: pointer;
   outline-offset: 4px;
+  box-shadow: black 2px 2px;
 }
 
 .front {
