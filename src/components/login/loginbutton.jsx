@@ -1,15 +1,12 @@
 import './login-button.styles.scss'
 import {Link} from "react-router-dom";
 
-const LoginButton = ({handleLoginClick}) => {
-	const handleClick = () => {
-		handleLoginClick();
-	}
+const LoginButton = () => {
 
 	return (
 		<div className='button'>
-			<button onClick={handleClick} className='push-me button'>
-				<Link to={'/login'} ><a href='#!' className='front'>Order</a></Link>
+			<button className='push-me button'>
+				<Link to={'/login'} className='front'>Order</Link>
 			</button>
 		</div>
 	);
