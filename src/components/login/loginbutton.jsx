@@ -6,7 +6,7 @@ const LoginButton = () => {
 	return (
 		<div className='button'>
 			<button className='push-me button'>
-				<Link style={{ textDecoration: 'none', color: 'white' }} to={'/login'} className='front'>Order</Link>
+				<Link style={{ textDecoration: 'none', color: 'white' }} to={'/login'} className='front'>Login</Link>
 			</button>
 		</div>
 	);

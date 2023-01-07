@@ -6,7 +6,8 @@ const Title = () => {
         <>
             <div className='holiday-font'>
                 <h1 className='title'>Nene's Christmas Goodies</h1>
-                <p className='blink'>Orders begin on November 1st</p>
+                <p className='blink'>Orders begin on</p>
+                <p className='blink'>November 1st</p>
             </div>
             <Countdown />
         </>

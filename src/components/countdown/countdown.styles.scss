@@ -4,14 +4,11 @@
 
 .loading {
   display: flex;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  justify-content: center;
+  margin-top: 150px;
 }
 
 .loading h1 {
-
   font-size: 3rem;
   font-weight: 400;
   color: #fff;
