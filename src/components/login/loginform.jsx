@@ -1,5 +1,6 @@
 import './loginform.styles.scss';
 import { useState } from 'react';
+import {Link} from "react-router-dom";
 
 const LoginForm = (props) => {
 	const [authMode, setAuthMode] = useState("signin")
@@ -40,6 +41,7 @@ const LoginForm = (props) => {
 							<button type="submit" className="btn btn-primary">
 								Submit
 							</button>
+							<button className='btn btn-primary'><Link style={{ textDecoration: 'none', color: 'white' }} to={'/baking-instructions'}>DEMO</Link></button>
 						</div>
 						<p className="text-center mt-2">
 							<a href="#/">Forgot Password?</a>

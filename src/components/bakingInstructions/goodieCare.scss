@@ -1,0 +1,40 @@
+.holiday-font{
+  font-family: 'Mountains of Christmas', cursive, sans-serif;
+}
+
+.directions {
+  margin: 50px;
+  font-size: 60px;
+  text-shadow: 5px 5px 2px black;
+  text-align: center;
+}
+
+.orderbutton {
+  font-family: 'Mountains of Christmas', cursive, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  font-size: 60px;
+  text-shadow: 5px 5px 2px black;
+  text-align: center;
+  border-radius: 40px;
+  border: 10px solid black;
+  background-color: lawngreen;
+  color: white;
+  padding: 20px;
+  animation: bounce 1.5s infinite;
+  width: 300px;
+ }
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
