@@ -362,4 +362,4 @@ const yearNow = year.getFullYear();
   );
 };
 
-export default OrderForm
+export default OrderForm;
