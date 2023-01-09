@@ -143,31 +143,10 @@ const yearNow = year.getFullYear();
 									2
 								</Badge>
 							</Button>
-							<Button
-								color="primary"
-								className='m-3'
-							>
-								Pecan Puffs{' '}
-								<Badge
-									color="dark"
-								>
-									1
-								</Badge>
-							</Button>
+
 					</div>
 					{/*Section 2*/}
 					<div className='col'>
-						<Button
-							color="primary"
-							className='m-3'
-						>
-							Olive Tapanade{' '}
-							<Badge
-								color="dark"
-							>
-								1
-							</Badge>
-						</Button>
 						<Button
 							color="primary"
 							className='m-3'
@@ -203,8 +182,30 @@ const yearNow = year.getFullYear();
 						</Button>
 
 					</div>
-					{/*Section 3*/}
+				{/*Section 3*/}
 					<div className='col'>
+						<Button
+							color="primary"
+							className='m-3'
+						>
+							Pecan Puffs{' '}
+							<Badge
+								color="dark"
+							>
+								1
+							</Badge>
+						</Button>
+						<Button
+							color="primary"
+							className='m-3'
+						>
+							Olive Tapanade{' '}
+							<Badge
+								color="dark"
+							>
+								1
+							</Badge>
+						</Button>
 						<Button
 							color="primary"
 							className='m-3'
@@ -216,6 +217,9 @@ const yearNow = year.getFullYear();
 								1
 							</Badge>
 						</Button>
+					</div>
+					{/*Section 4*/}
+					<div className='col'>
 						<Button
 							color="primary"
 							className='m-3'
@@ -250,7 +254,7 @@ const yearNow = year.getFullYear();
 							</Badge>
 						</Button>
 					</div>
-					{/*Section 4*/}
+					{/*Section 5*/}
 					<div className='col'>
 						<Button
 							color="primary"
@@ -285,6 +289,9 @@ const yearNow = year.getFullYear();
 								0
 							</Badge>
 						</Button>
+					</div>
+				{/*Section 6*/}
+					<div className='col'>
 						<Button
 							color="primary"
 							className='m-3'
@@ -296,9 +303,6 @@ const yearNow = year.getFullYear();
 								0
 							</Badge>
 						</Button>
-					</div>
-					{/*Section 5*/}
-					<div className='col'>
 						<Button
 							color="primary"
 							className='m-3'
@@ -334,7 +338,7 @@ const yearNow = year.getFullYear();
 						</Button>
 					</div>
 					{/*text field*/}
-				<FormGroup floating className='col-3'>
+				<FormGroup floating className='col-5'>
 						<Input
 							id="specialInstructions"
 							name="specialInstructions"
