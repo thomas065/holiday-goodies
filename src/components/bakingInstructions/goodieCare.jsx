@@ -74,7 +74,7 @@ const GoodieCare = () => {
 					Bring to room temperature before eating -- unless you like frozen or cold cookies!
 				</p>
 			</div>
-			<Link style={{ textDecoration: 'none', color: 'white' }} to={'/order'} className='orderbutton'>Continue</Link>>
+			<Link style={{ textDecoration: 'none', color: 'white' }} to={'/order-form'} className='orderbutton'>Continue</Link>>
 		</div>
   );
 }

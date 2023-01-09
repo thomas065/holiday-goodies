@@ -42,7 +42,8 @@ const LoginForm = (props) => {
 								Submit
 							</button>
 								<Link style={{
-									textDecoration: 'none', color: 'white',
+									textDecoration: 'none',
+									color: 'white',
 									backgroundColor:'blue',
 									textAlign:'center',
 									padding:'5px',
