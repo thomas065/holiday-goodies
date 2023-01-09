@@ -1,6 +1,6 @@
 import './order.styles.scss';
 import {useFormik} from "formik";
-import {Form, FormGroup, Input, Label, Button, Badge, Col } from "reactstrap";
+import {Form, FormGroup, Input, Label, Button, Badge,} from "reactstrap";
 
 const OrderForm = () => {
 const year = new Date();
@@ -136,7 +136,7 @@ const yearNow = year.getFullYear();
 								color="primary"
 								className='m-3'
 							>
-								Snikerdoodles{' '}
+								Snickerdoodles{' '}
 								<Badge
 									color="dark"
 								>
@@ -242,7 +242,7 @@ const yearNow = year.getFullYear();
 							color="primary"
 							className='m-3'
 						>
-							Rasin Scones{' '}
+							Raisin Scones{' '}
 							<Badge
 								color="dark"
 							>
