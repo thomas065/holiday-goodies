@@ -111,7 +111,7 @@ const yearNow = year.getFullYear();
 					{/*Section 1*/}
 							<Button
 								color="primary"
-								className='m-3'
+								className='m-3 order'
 								type="button"
 							>
 								Ginger Snaps{' '}
@@ -124,7 +124,7 @@ const yearNow = year.getFullYear();
 
 							<Button
 								color="primary"
-								className='m-3'
+								className='m-3 order'
 								type="button"
 							>
 								Sugar Cookies{' '}
@@ -137,7 +137,7 @@ const yearNow = year.getFullYear();
 
 							<Button
 								color="primary"
-								className='m-3'
+								className='m-3 order'
 								type="button"
 							>
 								Snickerdoodles{' '}
@@ -151,7 +151,7 @@ const yearNow = year.getFullYear();
 					{/*Section 2*/}
 						<Button
 							color="primary"
-							className='m-3'
+							className='m-3 order'
 							type="button"
 						>
 							Hot Pickles{' '}
@@ -164,7 +164,7 @@ const yearNow = year.getFullYear();
 
 						<Button
 							color="primary"
-							className='m-3'
+							className='m-3 order'
 							type="button"
 						>
 							Sweet Pickles{' '}
@@ -177,7 +177,7 @@ const yearNow = year.getFullYear();
 
 						<Button
 							color="primary"
-							className='m-3'
+							className='m-3 order'
 							type="button"
 						>
 							Cinnamon Rolls{' '}
@@ -191,7 +191,7 @@ const yearNow = year.getFullYear();
 				{/*Section 3*/}
 						<Button
 							color="primary"
-							className='m-3'
+							className='m-3 order'
 							type="button"
 						>
 							Pecan Puffs{' '}
@@ -204,7 +204,7 @@ const yearNow = year.getFullYear();
 
 						<Button
 							color="primary"
-							className='m-3'
+							className='m-3 order'
 							type="button"
 						>
 							Olive Tapanade{' '}
@@ -217,7 +217,7 @@ const yearNow = year.getFullYear();
 
 						<Button
 							color="primary"
-							className='m-3'
+							className='m-3 order'
 							type="button"
 						>
 							Pumpkin Bread{' '}
@@ -231,7 +231,7 @@ const yearNow = year.getFullYear();
 					{/*Section 4*/}
 						<Button
 							color="primary"
-							className='m-3'
+							className='m-3 order'
 							type="button"
 						>
 							Apple Sauce Cake{' '}
@@ -244,7 +244,7 @@ const yearNow = year.getFullYear();
 
 						<Button
 							color="primary"
-							className='m-3'
+							className='m-3 order'
 							type="button"
 						>
 							English Muffins{' '}
@@ -257,7 +257,7 @@ const yearNow = year.getFullYear();
 
 						<Button
 							color="primary"
-							className='m-3'
+							className='m-3 order'
 							type="button"
 						>
 							Raisin Scones{' '}
@@ -271,7 +271,7 @@ const yearNow = year.getFullYear();
 					{/*Section 5*/}
 						<Button
 							color="primary"
-							className='m-3'
+							className='m-3 order'
 							type="button"
 						>
 							Strawberry Butter{' '}
@@ -284,7 +284,7 @@ const yearNow = year.getFullYear();
 
 						<Button
 							color="primary"
-							className='m-3'
+							className='m-3 order'
 							type="button"
 						>
 							Cinnamon Honey Butter{' '}
@@ -297,7 +297,7 @@ const yearNow = year.getFullYear();
 
 						<Button
 							color="primary"
-							className='m-3'
+							className='m-3 order'
 							type="button"
 						>
 							Chocolate Chip Cookies w/ Mocha Cream Filling{' '}
@@ -311,7 +311,7 @@ const yearNow = year.getFullYear();
 				{/*Section 6*/}
 						<Button
 							color="primary"
-							className='m-3'
+							className='m-3 order'
 							type="button"
 						>
 							Chocolate peanut Butter No Bake Cookies{' '}
@@ -324,7 +324,7 @@ const yearNow = year.getFullYear();
 
 						<Button
 							color="primary"
-							className='m-3'
+							className='m-3 order'
 							type="button"
 						>
 							Vanilla Orange Cranberry Cookies{' '}
@@ -337,7 +337,7 @@ const yearNow = year.getFullYear();
 
 						<Button
 							color="primary"
-							className='m-3'
+							className='m-3 order'
 							type="button"
 						>
 							Rice Krispie Treats (REGULAR){' '}
@@ -350,7 +350,7 @@ const yearNow = year.getFullYear();
 
 						<Button
 							color="primary"
-							className='m-3'
+							className='m-3 order'
 							type="button"
 						>
 							Rice Krispie Treats (CHOCOLATE){' '}
