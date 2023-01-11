@@ -300,6 +300,19 @@ const yearNow = year.getFullYear();
 							className='m-3 order'
 							type="button"
 						>
+							Double Chocolate Chip Cookies{' '}
+							<Badge
+								color="dark"
+							>
+								0
+							</Badge>
+						</Button>
+
+						<Button
+							color="primary"
+							className='m-3 order'
+							type="button"
+						>
 							Chocolate Chip Cookies w/ Mocha Cream Filling{' '}
 							<Badge
 								color="dark"
@@ -314,7 +327,7 @@ const yearNow = year.getFullYear();
 							className='m-3 order'
 							type="button"
 						>
-							Chocolate peanut Butter No Bake Cookies{' '}
+							Chocolate Peanut Butter No Bake Cookies{' '}
 							<Badge
 								color="dark"
 							>
@@ -354,6 +367,18 @@ const yearNow = year.getFullYear();
 							type="button"
 						>
 							Rice Krispie Treats (CHOCOLATE){' '}
+							<Badge
+								color="dark"
+							>
+								1
+							</Badge>
+						</Button>
+						<Button
+							color="primary"
+							className='m-3 order'
+							type="button"
+						>
+							Other{' '}
 							<Badge
 								color="dark"
 							>
