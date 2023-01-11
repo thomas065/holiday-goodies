@@ -15,12 +15,12 @@ const GoodieCare = () => {
 		fontSize: "30px",
 		textAlign: "center",
 		margin: "50px",
+		fontWeight: "bold",
 	};
 
 	const mystyle3 = {
 		fontSize: "30px",
 		margin: "50px",
-		fontWeight: "bold",
 	};
 
   return (
@@ -63,7 +63,7 @@ const GoodieCare = () => {
 				</p>
 			</div>
 			<div className='col-12 text-center'>
-				<h1 style={{textDecoration: 'underline', backgroundColor: 'gold', color: 'green', borderRadius: "40px", width: '300px', margin: 'auto'}}>
+				<h1 style={{textDecoration: 'underline', backgroundColor: 'gold', color: 'black', borderRadius: "40px", width: '300px', margin: 'auto'}}>
 					Pickles, Tapanade and Butters:
 				</h1>
 			</div>

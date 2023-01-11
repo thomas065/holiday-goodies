@@ -47,21 +47,20 @@ const yearNow = year.getFullYear();
 
   return (
 	  <>
-		<div className="mt-5">
-		  <div className="col-12">
-			  <h1 className='holiday-font'>Christmas Baking {yearNow}</h1>
+		  <div className="holiday-font">
+			  <h1 className='logo'>Christmas Baking "{yearNow}"</h1>
 		  </div>
-		  <div className="col-12 mt-5 m-auto text-start holiday-font">
+		  <div className="col-12 mt-5 disclaimer">
 			<ul>
 				<li>2 Items MAX each</li>
 				<li>Input of which double in the last box</li>
 				<li>Send responses by <b>November 13th</b></li>
-				<li><b>Be sure to select a Butter if you choose a Bread</b></li>
+				<li><em>Be sure to select a Butter if you choose a Bread</em></li>
 			</ul>
 		  </div>
-		</div>
 		<div>
 			<Form onSubmit={formik.handleSubmit}>
+					<div className='name-space'>
 						<FormGroup floating className="mb-3 col-3">
 							<Input
 								id="firstName"
@@ -107,12 +106,13 @@ const yearNow = year.getFullYear();
 
 							<Label htmlFor="email">Email Address</Label>
 						</FormGroup>
-
+					</div>
+					<div className='treats'>
 					{/*Section 1*/}
-					<div className='col'>
 							<Button
 								color="primary"
 								className='m-3'
+								type="button"
 							>
 								Ginger Snaps{' '}
 								<Badge
@@ -121,9 +121,11 @@ const yearNow = year.getFullYear();
 									2
 								</Badge>
 							</Button>
+
 							<Button
 								color="primary"
 								className='m-3'
+								type="button"
 							>
 								Sugar Cookies{' '}
 								<Badge
@@ -132,9 +134,11 @@ const yearNow = year.getFullYear();
 									1
 								</Badge>
 							</Button>
+
 							<Button
 								color="primary"
 								className='m-3'
+								type="button"
 							>
 								Snickerdoodles{' '}
 								<Badge
@@ -144,12 +148,11 @@ const yearNow = year.getFullYear();
 								</Badge>
 							</Button>
 
-					</div>
 					{/*Section 2*/}
-					<div className='col'>
 						<Button
 							color="primary"
 							className='m-3'
+							type="button"
 						>
 							Hot Pickles{' '}
 							<Badge
@@ -158,9 +161,11 @@ const yearNow = year.getFullYear();
 								2
 							</Badge>
 						</Button>
+
 						<Button
 							color="primary"
 							className='m-3'
+							type="button"
 						>
 							Sweet Pickles{' '}
 							<Badge
@@ -169,9 +174,11 @@ const yearNow = year.getFullYear();
 								1
 							</Badge>
 						</Button>
+
 						<Button
 							color="primary"
 							className='m-3'
+							type="button"
 						>
 							Cinnamon Rolls{' '}
 							<Badge
@@ -181,12 +188,11 @@ const yearNow = year.getFullYear();
 							</Badge>
 						</Button>
 
-					</div>
 				{/*Section 3*/}
-					<div className='col'>
 						<Button
 							color="primary"
 							className='m-3'
+							type="button"
 						>
 							Pecan Puffs{' '}
 							<Badge
@@ -195,9 +201,11 @@ const yearNow = year.getFullYear();
 								1
 							</Badge>
 						</Button>
+
 						<Button
 							color="primary"
 							className='m-3'
+							type="button"
 						>
 							Olive Tapanade{' '}
 							<Badge
@@ -206,9 +214,11 @@ const yearNow = year.getFullYear();
 								1
 							</Badge>
 						</Button>
+
 						<Button
 							color="primary"
 							className='m-3'
+							type="button"
 						>
 							Pumpkin Bread{' '}
 							<Badge
@@ -217,12 +227,12 @@ const yearNow = year.getFullYear();
 								1
 							</Badge>
 						</Button>
-					</div>
+
 					{/*Section 4*/}
-					<div className='col'>
 						<Button
 							color="primary"
 							className='m-3'
+							type="button"
 						>
 							Apple Sauce Cake{' '}
 							<Badge
@@ -231,9 +241,11 @@ const yearNow = year.getFullYear();
 								1
 							</Badge>
 						</Button>
+
 						<Button
 							color="primary"
 							className='m-3'
+							type="button"
 						>
 							English Muffins{' '}
 							<Badge
@@ -242,9 +254,11 @@ const yearNow = year.getFullYear();
 								2
 							</Badge>
 						</Button>
+
 						<Button
 							color="primary"
 							className='m-3'
+							type="button"
 						>
 							Raisin Scones{' '}
 							<Badge
@@ -253,12 +267,12 @@ const yearNow = year.getFullYear();
 								0
 							</Badge>
 						</Button>
-					</div>
+
 					{/*Section 5*/}
-					<div className='col'>
 						<Button
 							color="primary"
 							className='m-3'
+							type="button"
 						>
 							Strawberry Butter{' '}
 							<Badge
@@ -267,9 +281,11 @@ const yearNow = year.getFullYear();
 								2
 							</Badge>
 						</Button>
+
 						<Button
 							color="primary"
 							className='m-3'
+							type="button"
 						>
 							Cinnamon Honey Butter{' '}
 							<Badge
@@ -278,9 +294,11 @@ const yearNow = year.getFullYear();
 								2
 							</Badge>
 						</Button>
+
 						<Button
 							color="primary"
 							className='m-3'
+							type="button"
 						>
 							Chocolate Chip Cookies w/ Mocha Cream Filling{' '}
 							<Badge
@@ -289,12 +307,12 @@ const yearNow = year.getFullYear();
 								0
 							</Badge>
 						</Button>
-					</div>
+
 				{/*Section 6*/}
-					<div className='col'>
 						<Button
 							color="primary"
 							className='m-3'
+							type="button"
 						>
 							Chocolate peanut Butter No Bake Cookies{' '}
 							<Badge
@@ -303,9 +321,11 @@ const yearNow = year.getFullYear();
 								0
 							</Badge>
 						</Button>
+
 						<Button
 							color="primary"
 							className='m-3'
+							type="button"
 						>
 							Vanilla Orange Cranberry Cookies{' '}
 							<Badge
@@ -314,9 +334,11 @@ const yearNow = year.getFullYear();
 								0
 							</Badge>
 						</Button>
+
 						<Button
 							color="primary"
 							className='m-3'
+							type="button"
 						>
 							Rice Krispie Treats (REGULAR){' '}
 							<Badge
@@ -325,9 +347,11 @@ const yearNow = year.getFullYear();
 								1
 							</Badge>
 						</Button>
+
 						<Button
 							color="primary"
 							className='m-3'
+							type="button"
 						>
 							Rice Krispie Treats (CHOCOLATE){' '}
 							<Badge
@@ -336,9 +360,10 @@ const yearNow = year.getFullYear();
 								1
 							</Badge>
 						</Button>
-					</div>
+
+				</div>
 					{/*text field*/}
-				<FormGroup floating className='col-5'>
+				<FormGroup floating className='col-5 mt-5 m-auto'>
 						<Input
 							id="specialInstructions"
 							name="specialInstructions"
@@ -354,12 +379,15 @@ const yearNow = year.getFullYear();
 					>
 						Special Instructions:
 					</Label>
-				</FormGroup>
-				<Button
-					className='text-light fw-bold border border-3 light rounded-pill mt-3 p-3 bg-success'
+				<div className='d-flex justify-content-center'>
+					<Button
+					className=' text-light w-50 fw-bold border border-3 rounded-pill mt-3 p-3 bg-success'
 					color="warning"
 					type="submit"
-				>Submit</Button>
+					>Submit</Button>
+				</div>
+
+				</FormGroup>
 			</Form>
 		</div>
 	  </>

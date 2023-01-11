@@ -1,0 +1,45 @@
+
+.logo {
+  margin-top: 50px;
+  text-align: center;
+  letter-spacing: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 60px;
+  color: lawngreen;
+  text-shadow: 5px 5px 2px red;
+}
+
+.disclaimer {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  color: white;
+  text-align: start;
+  margin: auto;
+  width: 550px;
+  border-radius: 40px;
+  padding: 20px;
+  opacity: 0.8;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.name-space {
+  display: flex;
+  justify-content: space-around;
+  margin: 50px 0 50px 0;
+}
+
+.treats {
+  display: inline-block;
+  text-align: center;
+  justify-content: center;
+}
+
+Button {
+  width: 25%;
+  margin: 5px;
+  display: inline-block;
+}
