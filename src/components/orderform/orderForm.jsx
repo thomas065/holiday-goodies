@@ -1,6 +1,7 @@
 import './order.styles.scss';
 import {useFormik} from "formik";
 import {Form, FormGroup, Input, Label, Button, Badge,} from "reactstrap";
+import {useState} from "react";
 
 const OrderForm = () => {
 const year = new Date();
@@ -44,6 +45,16 @@ const yearNow = year.getFullYear();
 			alert(`Your order was successfully submitted!`);
 		},
 	});
+
+	const [toastCount, setToastCount] = useState(0);
+
+	const cycleToastCount = () => {
+		setToastCount(toastCount + 1);
+
+		if (toastCount === 2) {
+			setToastCount(0);
+		}
+	}
 
   return (
 	  <>
@@ -113,12 +124,13 @@ const yearNow = year.getFullYear();
 								color="primary"
 								className='m-3 order'
 								type="button"
+								onClick={cycleToastCount}
 							>
 								Ginger Snaps{' '}
 								<Badge
 								color="dark"
 								>
-									2
+									{toastCount}
 								</Badge>
 							</Button>
 
