@@ -45,7 +45,7 @@ const GoodieCare = () => {
 			</div>
 			<div className='col-9 col-sm-12'>
 				<p style={mystyle3}>
-					No refigeration is needed if eaten by December 31st. If you want to save some for later,
+					No refrigeration is needed if eaten by December 31st. If you want to save some for later,
 					I would place them in an airtight container and store in the fridge or freezer. They will last for about 2 weeks.
 					Bring to room temperature before eating -- unless you like frozen or cold cookies!
 				</p>
@@ -57,7 +57,7 @@ const GoodieCare = () => {
 			</div>
 			<div className='col-9 col-sm-12'>
 				<p style={mystyle3}>
-					No refigeration is needed if eaten by December 31st. If you want to save some for later,
+					No refrigeration is needed if eaten by December 31st. If you want to save some for later,
 					I would place them in an airtight container and store in the fridge or freezer. They will last for about 2 weeks.
 					Bring to room temperature before eating -- unless you like frozen or cold cookies!
 				</p>
@@ -69,12 +69,12 @@ const GoodieCare = () => {
 			</div>
 			<div className='col-9 col-sm-12'>
 				<p style={mystyle3}>
-					No refigeration is needed if eaten by December 31st. If you want to save some for later,
+					No refrigeration is needed if eaten by December 31st. If you want to save some for later,
 					I would place them in an airtight container and store in the fridge or freezer. They will last for about 2 weeks.
 					Bring to room temperature before eating -- unless you like frozen or cold cookies!
 				</p>
 			</div>
-			<Link style={{ textDecoration: 'none', color: 'white' }} to={'/order-form'} className='orderbutton'>Continue</Link>>
+			<Link style={{ textDecoration: 'none', color: 'white' }} to={'/order-form'} className='orderbutton'>Continue</Link>
 		</div>
   );
 }
