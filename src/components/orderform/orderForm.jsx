@@ -1,7 +1,7 @@
 import './order.styles.scss';
 import {useFormik} from "formik";
-import {Form, FormGroup, Input, Label, Button, Badge,} from "reactstrap";
-import {useState} from "react";
+import {Form, FormGroup, Input, Label, Button} from "reactstrap";
+import OrderList from "./orderList";
 
 const OrderForm = () => {
 const year = new Date();
@@ -46,14 +46,15 @@ const yearNow = year.getFullYear();
 		},
 	});
 
-	const [toastCount, setToastCount] = useState(0);
-
-	const cycleToastCount = () => {
-		setToastCount(toastCount + 1);
-
-		if (toastCount === 2) {
-			setToastCount(0);
+	// clear all buttons and reset form
+	const clearAll = () => {
+		formik.resetForm();
+		// clear all buttons
+		const buttons = document.querySelectorAll('button');
+		buttons.forEach(button => {
+			button.classList.remove('active');
 		}
+		);
 	}
 
   return (
@@ -119,286 +120,8 @@ const yearNow = year.getFullYear();
 						</FormGroup>
 					</div>
 					<div className='treats'>
-					{/*Section 1*/}
-							<Button
-								color="primary"
-								className='m-3 order'
-								type="button"
-								onClick={cycleToastCount}
-							>
-								Ginger Snaps{' '}
-								<Badge
-								color="dark"
-								>
-									{toastCount}
-								</Badge>
-							</Button>
-
-							<Button
-								color="primary"
-								className='m-3 order'
-								type="button"
-							>
-								Sugar Cookies{' '}
-								<Badge
-									color="dark"
-								>
-									1
-								</Badge>
-							</Button>
-
-							<Button
-								color="primary"
-								className='m-3 order'
-								type="button"
-							>
-								Snickerdoodles{' '}
-								<Badge
-									color="dark"
-								>
-									2
-								</Badge>
-							</Button>
-
-					{/*Section 2*/}
-						<Button
-							color="primary"
-							className='m-3 order'
-							type="button"
-						>
-							Hot Pickles{' '}
-							<Badge
-								color="dark"
-							>
-								2
-							</Badge>
-						</Button>
-
-						<Button
-							color="primary"
-							className='m-3 order'
-							type="button"
-						>
-							Sweet Pickles{' '}
-							<Badge
-								color="dark"
-							>
-								1
-							</Badge>
-						</Button>
-
-						<Button
-							color="primary"
-							className='m-3 order'
-							type="button"
-						>
-							Cinnamon Rolls{' '}
-							<Badge
-								color="dark"
-							>
-								2
-							</Badge>
-						</Button>
-
-				{/*Section 3*/}
-						<Button
-							color="primary"
-							className='m-3 order'
-							type="button"
-						>
-							Pecan Puffs{' '}
-							<Badge
-								color="dark"
-							>
-								1
-							</Badge>
-						</Button>
-
-						<Button
-							color="primary"
-							className='m-3 order'
-							type="button"
-						>
-							Olive Tapanade{' '}
-							<Badge
-								color="dark"
-							>
-								1
-							</Badge>
-						</Button>
-
-						<Button
-							color="primary"
-							className='m-3 order'
-							type="button"
-						>
-							Pumpkin Bread{' '}
-							<Badge
-								color="dark"
-							>
-								1
-							</Badge>
-						</Button>
-
-					{/*Section 4*/}
-						<Button
-							color="primary"
-							className='m-3 order'
-							type="button"
-						>
-							Apple Sauce Cake{' '}
-							<Badge
-								color="dark"
-							>
-								1
-							</Badge>
-						</Button>
-
-						<Button
-							color="primary"
-							className='m-3 order'
-							type="button"
-						>
-							English Muffins{' '}
-							<Badge
-								color="dark"
-							>
-								2
-							</Badge>
-						</Button>
-
-						<Button
-							color="primary"
-							className='m-3 order'
-							type="button"
-						>
-							Raisin Scones{' '}
-							<Badge
-								color="dark"
-							>
-								0
-							</Badge>
-						</Button>
-
-					{/*Section 5*/}
-						<Button
-							color="primary"
-							className='m-3 order'
-							type="button"
-						>
-							Strawberry Butter{' '}
-							<Badge
-								color="dark"
-							>
-								2
-							</Badge>
-						</Button>
-
-						<Button
-							color="primary"
-							className='m-3 order'
-							type="button"
-						>
-							Cinnamon Honey Butter{' '}
-							<Badge
-								color="dark"
-							>
-								2
-							</Badge>
-						</Button>
-
-						<Button
-							color="primary"
-							className='m-3 order'
-							type="button"
-						>
-							Double Chocolate Chip Cookies{' '}
-							<Badge
-								color="dark"
-							>
-								0
-							</Badge>
-						</Button>
-
-						<Button
-							color="primary"
-							className='m-3 order'
-							type="button"
-						>
-							Chocolate Chip Cookies w/ Mocha Cream Filling{' '}
-							<Badge
-								color="dark"
-							>
-								0
-							</Badge>
-						</Button>
-
-				{/*Section 6*/}
-						<Button
-							color="primary"
-							className='m-3 order'
-							type="button"
-						>
-							Chocolate Peanut Butter No Bake Cookies{' '}
-							<Badge
-								color="dark"
-							>
-								0
-							</Badge>
-						</Button>
-
-						<Button
-							color="primary"
-							className='m-3 order'
-							type="button"
-						>
-							Vanilla Orange Cranberry Cookies{' '}
-							<Badge
-								color="dark"
-							>
-								0
-							</Badge>
-						</Button>
-
-						<Button
-							color="primary"
-							className='m-3 order'
-							type="button"
-						>
-							Rice Krispie Treats (REGULAR){' '}
-							<Badge
-								color="dark"
-							>
-								1
-							</Badge>
-						</Button>
-
-						<Button
-							color="primary"
-							className='m-3 order'
-							type="button"
-						>
-							Rice Krispie Treats (CHOCOLATE){' '}
-							<Badge
-								color="dark"
-							>
-								1
-							</Badge>
-						</Button>
-						<Button
-							color="primary"
-							className='m-3 order'
-							type="button"
-						>
-							Other{' '}
-							<Badge
-								color="dark"
-							>
-								1
-							</Badge>
-						</Button>
-
-				</div>
+						<OrderList />
+					</div>
 					{/*text field*/}
 				<FormGroup floating className='col-5 mt-5 m-auto'>
 						<Input
@@ -419,9 +142,13 @@ const yearNow = year.getFullYear();
 				<div className='bake'>
 					<Button
 					className=' text-light w-50 fw-bold border border-3 rounded-pill mt-3 p-3 bg-success'
-					color="warning"
 					type="submit"
 					>Submit</Button>
+					<Button
+						className=' text-light w-50 fw-bold border border-3 rounded-pill mt-3 p-3 bg-danger'
+						type="reset"
+						onClick={clearAll}
+					>Reset</Button>
 				</div>
 
 				</FormGroup>
