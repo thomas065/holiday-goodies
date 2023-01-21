@@ -1,6 +1,6 @@
 import './styles.scss';
 import Title from './components/titlepage/title';
-import {BrowserRouter, Routes, Route} from 'react-router-dom';
+import {HashRouter, Routes, Route} from 'react-router-dom';
 import LoginForm from "./components/login/loginform";
 import "bootstrap/dist/css/bootstrap.min.css";
 import GoodieCare from "./components/bakingInstructions/goodieCare";
@@ -8,14 +8,14 @@ import OrderForm from "./components/orderform/orderForm";
 
 function App() {
     return (
-        <BrowserRouter>
+        <HashRouter>
             <Routes>
-                <Route path="/" element={<Title />} />
-                <Route path="/login" element={<LoginForm />} />
-                <Route path="/baking-instructions" element={<GoodieCare />} />
-                <Route path="/order-form" element={<OrderForm />} />
+                <Route exact path="/login" element={<LoginForm />} />
+                <Route exact path="/baking-instructions" element={<GoodieCare />} />
+                <Route exact path="/order-form" element={<OrderForm />} />
+                <Route exact path="/" element={<Title />} />
             </Routes>
-        </BrowserRouter>
+        </HashRouter>
     );
 }
 export default App;
