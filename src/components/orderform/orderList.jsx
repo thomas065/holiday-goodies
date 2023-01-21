@@ -37,7 +37,7 @@ const OrderList = props => {
     const listTreat = goodies.map(item => (
         <div
             key={item}
-            className='d-flex align-items-center justify-content-center border'
+            className='d-flex align-items-center justify-content-center'
         >
             <Button
                 color='primary w-100 text-wrap mb-2'
